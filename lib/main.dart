@@ -27,15 +27,15 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Guddu Goswami'), // Corrected text to Text and added const
-        backgroundColor: Colors.deepOrange,
+        title: const Text('Guddu Goswami', style: TextStyle(color: Colors.white),), // Corrected text to Text and added const
+        backgroundColor: Colors.blue,
       ),
       body: Center(
         child: Container(
-          width: 100,
+          width: 200,
           height: 100,
-          color: Colors.limeAccent,
-          child: Text('Hello Dart !'),
+          color: Colors.blueGrey,
+          child: Center(child: Text('Hello Dart !', style: TextStyle(color: Colors.white),)),
           // Add content here if needed
         ),
       ),
